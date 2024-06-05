@@ -1,4 +1,7 @@
 function isFromBellville(registrationNumber) {
+    if (!registrationNumber) {
+        return "please enter registration number"
+    } else 
     return registrationNumber.startsWith('CY');
 }
 

@@ -1,4 +1,7 @@
 function isWeekday(day) {
+  if (!day.toLowerCase().endsWith('day')) {
+    return "Please enter a day of the week";
+  }
     return day === 'Monday' || day === 'Tuesday' || day === 'Wednesday' || day === 'Thursday' || day === 'Friday';
     return day !== 'Saturday' || day !== 'Sunday'
   }

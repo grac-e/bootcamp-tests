@@ -4,4 +4,9 @@ describe('the isFromBellville test', function () {
         assert.equal(isFromBellville('CJ 123'), false);
     });
 
+    it('should request a registration number if there is none', function () {
+        assert.equal(isFromBellville(''), "please enter registration number");
+    });
+
+
 });

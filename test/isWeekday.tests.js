@@ -8,5 +8,8 @@ describe('the isWeekday test', function () {
         assert.equal(isWeekday('Thursday'), true);
         assert.equal(isWeekday('Friday'), true);
     });
+    it('should ask for a valid input that ends with -day', function () {
+        assert.equal(isWeekday('Saturdy'), "Please enter a day of the week");
+    });
 
 });
