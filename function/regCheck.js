@@ -1,4 +1,7 @@
 function regCheck(registrationNumber, locationIndicator) {
+  if (!locationIndicator) {
+    return "please indicate location";
+  }
   return registrationNumber.endsWith(locationIndicator);
 }
 

@@ -13,4 +13,8 @@ describe('the regCheck test', function () {
         assert.equal(regCheck('FGT 123 MM', 'MP'), false);
     });
 
+    it('should request a location indicator', function () {
+        assert.equal(regCheck('DC 55 YU GP'), "please indicate location");
+    });
+
 });

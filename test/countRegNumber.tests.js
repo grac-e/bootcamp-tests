@@ -7,4 +7,9 @@ describe('the countRegNumber test', function () {
         assert.equal(regCount, 1);
     });
 
+    it('should request registration numbers in a string', function () {
+        var regCount = countRegNumber(87660)
+        assert.equal(regCount, "error: numbers are not in a string");
+    });
+
 });
